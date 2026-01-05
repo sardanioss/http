@@ -5,8 +5,8 @@ go 1.24.0
 require (
 	github.com/andybalholm/brotli v1.1.1
 	github.com/klauspost/compress v1.17.11
-	github.com/sardanioss/net v0.2.0
-	github.com/sardanioss/utls v0.2.0
+	github.com/sardanioss/net v0.1.0
+	github.com/sardanioss/utls v0.1.0
 	golang.org/x/term v0.38.0
 )
 
