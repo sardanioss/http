@@ -18,7 +18,7 @@ import (
 	"strconv"
 	"strings"
 
-	tls "github.com/refraction-networking/utls"
+	tls "github.com/sardanioss/utls"
 
 	http "github.com/sardanioss/http"
 )

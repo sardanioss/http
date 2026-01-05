@@ -45,7 +45,7 @@ import (
 	"sync"
 	"time"
 
-	tls "github.com/refraction-networking/utls"
+	tls "github.com/sardanioss/utls"
 
 	http "github.com/sardanioss/http"
 	"github.com/sardanioss/http/http2/hpack"

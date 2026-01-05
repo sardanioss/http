@@ -34,7 +34,7 @@ import (
 	"github.com/andybalholm/brotli"
 	"github.com/klauspost/compress/zstd"
 
-	tls "github.com/refraction-networking/utls"
+	tls "github.com/sardanioss/utls"
 
 	"github.com/sardanioss/http/httptrace"
 
@@ -327,6 +327,10 @@ type Transport struct {
 	// To use a custom dialer or TLS config and still attempt HTTP/2
 	// upgrades, set this to true.
 	ForceAttemptHTTP2 bool
+
+	// HTTP2 specifies HTTP/2 configuration parameters for the transport.
+	// If nil, default HTTP/2 settings are used.
+	HTTP2 *HTTP2Config
 
 	// === HTTP/1.1 Fingerprinting Fields ===
 

@@ -15,7 +15,7 @@ import (
 
 	"github.com/sardanioss/http/cookiejar"
 	"github.com/sardanioss/http/httptest"
-	tls "github.com/refraction-networking/utls"
+	tls "github.com/sardanioss/utls"
 	"github.com/sardanioss/net/publicsuffix"
 
 	http "github.com/sardanioss/http"

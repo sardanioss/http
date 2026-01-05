@@ -29,7 +29,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	tls "github.com/refraction-networking/utls"
+	tls "github.com/sardanioss/utls"
 
 	"github.com/sardanioss/net/http/httpguts"
 )
@@ -2647,6 +2647,10 @@ type Server struct {
 	// is derived from the base context and has a ServerContextKey
 	// value.
 	ConnContext func(ctx context.Context, c net.Conn) context.Context
+
+	// HTTP2 specifies HTTP/2 configuration parameters for the server.
+	// If nil, default HTTP/2 settings are used.
+	HTTP2 *HTTP2Config
 
 	inShutdown atomicBool // true when when server is in shutdown
 

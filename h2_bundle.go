@@ -31,7 +31,7 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	tls "github.com/refraction-networking/utls"
+	tls "github.com/sardanioss/utls"
 	"io"
 	"io/ioutil"
 	"log"
