@@ -69,4 +69,9 @@ type HTTP2Config struct {
 	// The errType contains only lowercase letters, digits, and underscores
 	// (a-z, 0-9, _).
 	CountError func(errType string)
+
+	// StrictMaxConcurrentRequests controls whether the server should
+	// reject requests that exceed MaxConcurrentStreams rather than queuing them.
+	// Added in Go 1.26.
+	StrictMaxConcurrentRequests bool
 }
